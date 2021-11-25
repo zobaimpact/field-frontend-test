@@ -1,0 +1,286 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@300&display=swap');
+
+.main_container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 3rem;
+
+  &-row {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &-cols {
+    width: 50%;
+  }
+}
+
+.mood_select_area {
+  border: 1px solid $color-gray2;
+  box-sizing: border-box;
+  border-radius: 15px;
+  max-height: 800px;
+
+  &-inner {
+    display: flex;
+    justify-content: space-evenly;
+    width: 80%;
+    margin: auto;
+    &-qs {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100%;
+      width: 100%;
+    }
+  }
+
+  &-selectors {
+    &-form {
+      width: 100%;
+    }
+  }
+}
+
+.mood_box-img {
+  height: 100px;
+}
+
+.mood_box_wrap {
+  min-height: 300px;
+  max-height: 500px;
+  padding-top: 2rem;
+
+  &_title {
+    &-wrap {
+      margin-top: 2rem;
+      text-align: center;
+      //   height: 50px;
+      width: 50%;
+      margin: auto;
+    }
+
+    &-text {
+      font-family: 'Mulish', sans-serif;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 24px;
+      line-height: 26px;
+      text-align: center;
+      color: #898583;
+    }
+  }
+}
+
+.mood_select-btns {
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  border: none;
+  background: rgba(175, 170, 168, 0.2);
+}
+
+.active-mood {
+  background: #120c35;
+  border-radius: 5px;
+  color: #ffffff !important;
+  width: 150px;
+  height: 50px;
+  font-family: 'Mulish', sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  border: none;
+  font-size: 1rem;
+}
+
+.current-mood {
+  border: 2px solid green;
+  width: 58px;
+  height: 58px;
+  border-radius: 50%;
+}
+
+.mood_btn-wrapper:hover {
+  border: 2px solid green;
+  width: 58px;
+  height: 58px;
+}
+
+.mood_btn-wrapper {
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  border: none;
+  background: rgba(175, 170, 168, 0.2);
+}
+
+.mood_result {
+  width: 185px;
+  height: 50px;
+  text-align: center;
+  margin: auto;
+  margin-top: 2rem;
+
+  &-para {
+    color: #1d9a39;
+    font-size: 1rem;
+    font-weight: 600;
+  }
+}
+
+.toolbar_area {
+  width: 100%;
+  //   height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &-btn {
+    width: 150px;
+    height: 50px;
+    background: #efeeee;
+    border-radius: 5px;
+    color: #ffffff;
+    font-family: 'Mulish', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    border: none;
+    font-size: 1rem;
+  }
+}
+
+.mood_display_area {
+  &-inner {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.no_mood {
+  width: 345px;
+  height: 264px;
+  border: 1px solid #efeeee;
+  box-sizing: border-box;
+  border-radius: 5px;
+
+  &_text-wrap {
+    height: 50px;
+    width: 120px;
+    text-align: center;
+    margin-top: 1rem;
+  }
+
+  &-para {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 18px;
+    color: #afaaa8;
+  }
+}
+
+.no_mood_header {
+  height: 100px;
+  margin-bottom: 1rem;
+
+  &-inner {
+    display: flex;
+    width: fit-content;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &-text {
+    font-family: 'Mulish', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 26px;
+    color: #35100c;
+    width: fit-content;
+    padding-left: 0.5rem;
+  }
+
+  &-subtext {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 26px;
+    text-align: center;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-family: 'Mulish', sans-serif;
+    color: rgba(53, 16, 12, 0.5);
+  }
+}
+
+.mood_img-wrap {
+  width: 50px;
+  height: 50px;
+}
+
+.moods {
+  height: 300px;
+  width: 100%;
+}
+
+
+
+.dummy_moods {
+  width: 400px;
+  height: fit-content;
+  background: rgba(243, 244, 246, 0.7);
+  border: 2px solid #c4c4c4;
+  box-sizing: border-box;
+  border-radius: 4px;
+  margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.mood_emo-wrap{
+    width: 50px;
+    height: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+// I could make use of the sass variables for the colors as well
+
+.neutral_mood {
+  border: 2px solid rgb(218, 16, 157);
+  color: rgb(218, 16, 157);
+}
+
+.sad_mood {
+  border: 2px solid red;
+  color: red;
+}
+
+.happy_mood {
+  border: 2px solid rgb(136, 235, 23);
+  color: rgb(136, 235, 23);
+}
+
+.selected_mood{
+    height: fit-content;
+    padding: 2px;
+    border: 2px solid rgb(9, 139, 42);
+    color: rgb(9, 139, 42);
+}
+
+.mood_text-date{
+    color: #c4c4c4 !important;
+}
+
+.catbg{
+    width: 100px;
+    height: 100%;
+}

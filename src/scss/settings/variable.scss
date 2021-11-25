@@ -1,3 +1,6 @@
+
+
+
 $themes: (
   light: (
     colorBackground: white,
@@ -63,6 +66,7 @@ $color-additional: #999999;
 $color-additional-hover: darken($color-additional, 10%);
 
 $color-yellow: #f6da6e;
+$color-gray2: #c4c4c4;
 $color-yellow-hover: darken($color-yellow, 10%);
 
 $color-violet: #c88ffa;
@@ -78,7 +82,6 @@ $color-light-gray: #d8dfe9;
 
 $color-green: #b8e986;
 $color-green-hover: darken($color-green, 10%);
-
 
 $directions: (
   ltr: (

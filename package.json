@@ -1,6 +1,7 @@
 {
   "name": "moody-cat",
-  "version": "2.5.0",
+  "author": "gerald chizoba okafor",
+  "version": "1.0",
   "private": true,
   "scripts": {
     "start": "react-scripts start",
